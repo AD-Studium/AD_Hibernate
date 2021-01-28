@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 04-dic-2020 17:45:19 by Hibernate Tools 5.4.21.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="hotel" dynamic-insert="false" dynamic-update="false" mutable="true" name="hibernate.Clientes" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="clientes">
+        <id name="idCliente" type="java.lang.Integer">
+            <column name="idCliente"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="nombre" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="nombre"/>
+        </property>
+        <property generated="never" lazy="false" name="apellidos" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="apellidos"/>
+        </property>
+        <property generated="never" lazy="false" name="email" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="email"/>
+        </property>
+        <property generated="never" lazy="false" name="dni" optimistic-lock="true" type="string" unique="false">
+            <column length="9" name="dni"/>
+        </property>
+        <property generated="never" lazy="false" name="clave" optimistic-lock="true" type="string" unique="false">
+            <column length="512" name="clave"/>
+        </property>
+    </class>
+</hibernate-mapping>
